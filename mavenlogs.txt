@@ -27,7 +27,8 @@
 [INFO] skip non existing resourceDirectory /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ restful-booker-api-automation-framework ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ restful-booker-api-automation-framework ---
 [INFO] 
@@ -36,9 +37,136 @@
 [INFO] -------------------------------------------------------
 [INFO] Running cucumber.Options.TestRunner
 This is set up method.
-/Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/src/test/java/files/test1.png
+["6", "Micky", "Sold", "https://image1;https://image2", "91", "Good", "1", "mouse"]
 HTTP/1.1 200 OK
-Date: Fri, 07 Oct 2022 16:35:53 GMT
+Date: Fri, 07 Oct 2022 16:52:53 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 6,
+    "category": {
+        "id": 1,
+        "name": "mouse"
+    },
+    "name": "Micky",
+    "photoUrls": [
+        "https://image1",
+        "https://image2"
+    ],
+    "tags": [
+        {
+            "id": 91,
+            "name": "Good"
+        }
+    ],
+    "status": "Sold"
+}
+petID 6
+["7", "Test", "Available", "https://image3;https://image4", "56", "Good", "6", "cat"]
+HTTP/1.1 200 OK
+Date: Fri, 07 Oct 2022 16:52:55 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 7,
+    "category": {
+        "id": 6,
+        "name": "cat"
+    },
+    "name": "Test",
+    "photoUrls": [
+        "https://image3",
+        "https://image4"
+    ],
+    "tags": [
+        {
+            "id": 56,
+            "name": "Good"
+        }
+    ],
+    "status": "Available"
+}
+petID 7
+["updatedName", "sold", "https://image1;https://image2", "43", "Good", "13", "dog"]
+HTTP/1.1 200 OK
+Date: Fri, 07 Oct 2022 16:52:57 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 7,
+    "category": {
+        "id": 13,
+        "name": "dog"
+    },
+    "name": "updatedName",
+    "photoUrls": [
+        "https://image1",
+        "https://image2"
+    ],
+    "tags": [
+        {
+            "id": 43,
+            "name": "Good"
+        }
+    ],
+    "status": "sold"
+}
+["updatedName", "sold", "https://image1;https://image2", "43", "Good", "13", "dog"]
+petID 7
+actualname updatedName
+actualStatus sold
+43
+Status code Assertion Passed 
+HTTP/1.1 200 OK
+Date: Fri, 07 Oct 2022 16:53:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 7,
+    "category": {
+        "id": 13,
+        "name": "dog"
+    },
+    "name": "updatedName",
+    "photoUrls": [
+        "https://image1",
+        "https://image2"
+    ],
+    "tags": [
+        {
+            "id": 43,
+            "name": "Good"
+        }
+    ],
+    "status": "sold"
+}
+Status code Assertion Passed 
+HTTP/1.1 200 OK
+Date: Fri, 07 Oct 2022 16:53:02 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -50,33 +178,23 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "additionalMetadata: null\nFile uploaded to ./test1.png, 108687 bytes"
+    "message": "7"
 }
 Status code Assertion Passed 
 [32m[1m????????????????????????????????????????????????????????????????????????????[0m
 [32m[1m?[0m View your Cucumber Report at:                                            [32m[1m?[0m
-[32m[1m?[0m [1m[36m[4mhttps://reports.cucumber.io/reports/d64d98b1-8342-4a2d-af7a-3374209ee422[0m [32m[1m?[0m
+[32m[1m?[0m [1m[36m[4mhttps://reports.cucumber.io/reports/f45634d3-34e1-4a81-aed0-72b29a19e0f8[0m [32m[1m?[0m
 [32m[1m?[0m                                                                          [32m[1m?[0m
 [32m[1m?[0m [1mThis report will self-destruct in 24h.[0m                                   [32m[1m?[0m
 [32m[1m?[0m Keep reports forever: [4m[1m[36mhttps://reports.cucumber.io/profile[0m                [32m[1m?[0m
-[32m[1m????????????????????????????????????????????????????????????????????????????[0mReporturl :https://reports.cucumber.io/reports/d64d98b1-8342-4a2d-af7a-3374209ee422
+[32m[1m????????????????????????????????????????????????????????????????????????????[0mReporturl :https://reports.cucumber.io/reports/f45634d3-34e1-4a81-aed0-72b29a19e0f8
 =====Email Sent=====
-[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.369 s <<< FAILURE! - in cucumber.Options.TestRunner
-[ERROR] Create a pet with image(Validating pet-store Apis)  Time elapsed: 5.006 s  <<< ERROR!
-java.lang.NullPointerException
-
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.278 s - in cucumber.Options.TestRunner
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Errors: 
-[ERROR]   null
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
-[INFO] 
-[ERROR] There are test failures.
-
-Please refer to /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/target/surefire-reports for the individual test results.
-Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
 [INFO] 
 [INFO] --- maven-surefire-plugin:3.0.0-M3:test (default) @ restful-booker-api-automation-framework ---
 [INFO] Skipping execution of surefire because it has already been run for this configuration
@@ -93,7 +211,8 @@ Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and
 [INFO] skip non existing resourceDirectory /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ restful-booker-api-automation-framework ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ restful-booker-api-automation-framework ---
 [INFO] Skipping execution of surefire because it has already been run for this configuration
@@ -105,11 +224,11 @@ Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and
 [INFO] 
 [INFO] --- maven-cucumber-reporting:5.0.0:generate (execution) @ restful-booker-api-automation-framework ---
 [INFO] About to generate Cucumber report.
-Oct 07, 2022 10:05:47 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+Oct 07, 2022 10:23:01 PM net.masterthought.cucumber.ReportParser parseJsonFiles
 INFO: File '/Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/target/jsonReports/cucumber-report.json' contains 1 features
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  15.137 s
-[INFO] Finished at: 2022-10-07T22:05:47+05:30
+[INFO] Total time:  29.619 s
+[INFO] Finished at: 2022-10-07T22:23:02+05:30
 [INFO] ------------------------------------------------------------------------

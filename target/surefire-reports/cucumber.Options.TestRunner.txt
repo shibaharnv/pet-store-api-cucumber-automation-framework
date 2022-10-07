@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: cucumber.Options.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.369 s <<< FAILURE! - in cucumber.Options.TestRunner
-Create a pet with image(Validating pet-store Apis)  Time elapsed: 5.006 s  <<< ERROR!
-java.lang.NullPointerException
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.278 s - in cucumber.Options.TestRunner

@@ -90,12 +90,6 @@ public class StepDefinition extends Utils {
     @When("User hits the endpoint for {string}")
     public void user_hits_the_endpoint_for(String httpMethod) {
 
-//        if(httpMethod.equalsIgnoreCase("PUT"))
-//        {
-//            reqObj=reqObj.contentType(ContentType.JSON).body(data.createUpdatePetPayLoad(petID));
-//            responseSpec = new ResponseSpecBuilder().expectStatusCode(200).build();
-//            response = reqObj.when().put().then().spec(responseSpec).log().all().extract().response();
-//        }
 
         if(httpMethod.equalsIgnoreCase("GET"))
         {
@@ -172,34 +166,6 @@ public class StepDefinition extends Utils {
         }
     }
 
-//
-//    public void verify_the_updated_values(io.cucumber.datatable.DataTable dataTable) {
-//        List<List<String>> dataList = dataTable.asLists(String.class);
-//
-//        for (List<String> singleList : dataList) {
-//
-//            System.out.println(singleList);
-//
-//            String res = response.asString();
-//            JsonPath js = new JsonPath(res);
-//
-//            //Pet id verification
-//            String actualpetID = js.get("id").toString();
-//            Assert.assertEquals(actualpetID,petID);
-//            System.out.println("petID " + petID);
-//
-//            //name and status verification
-//
-//            String actualName = js.get("name").toString();
-//            Assert.assertEquals(actualName,singleList.get(0));
-//            System.out.println("actualname " + actualName);
-//
-//            String actualStatus = js.get("name").toString();
-//            Assert.assertEquals(actualStatus,singleList.get(1));
-//            System.out.println("actualStatus " + actualStatus);
-//        }
-//    }
-
 
     @Then("Verify the updated values")
     public void verify_the_updated_values(DataTable dataTable) {
@@ -269,14 +235,14 @@ public class StepDefinition extends Utils {
         assertEquals(response.getStatusCode(), status_code);
     }
 
-    @Then("Store the {string} from the response body")
-    public void store_the_from_the_response_body(String petID) {
-
-        String res = response.asString();
-        JsonPath js = new JsonPath(res);
-        petID = js.get("id").toString();
-        System.out.println("petID " + petID);
-    }
+//    @Then("Store the {string} from the response body")
+//    public void store_the_from_the_response_body(String petID) {
+//
+//        String res = response.asString();
+//        JsonPath js = new JsonPath(res);
+//        petID = js.get("id").toString();
+//        System.out.println("petID " + petID);
+//    }
 
     @Then("Store the petId from the response body")
     public void store_the_pet_id_from_the_response_body() {
