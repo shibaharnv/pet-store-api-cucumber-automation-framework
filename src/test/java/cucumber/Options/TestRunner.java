@@ -12,9 +12,8 @@ import org.junit.runner.RunWith;
 import java.io.IOException;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(publish = true,features="src/test/java/features",plugin ="json:target/jsonReports/cucumber-report.json",glue= {"stepDefinitions"},tags="@Regression")
-
-//CreatePetWithPayload or DeletePetWithId
+@CucumberOptions(publish = true,features="src/test/java/features",plugin ="json:target/jsonReports/cucumber-report.json",glue= {"stepDefinitions"},tags="@Regression")  //CreatePetWithPayload //Regression
+//CreatePetWithPayload or DeletePetWithId or UpdatePetwithPayload
 
 public class TestRunner {
 
@@ -27,6 +26,9 @@ public class TestRunner {
     public static void tearDown() throws IOException {
 
         String recipient=System.getProperty("RecipientList");
+
         Email.emailTrigger(recipient);
+
+
     }
 }

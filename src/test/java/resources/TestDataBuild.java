@@ -11,8 +11,6 @@ import java.util.Random;
 public class TestDataBuild {
 
     public static int randomPetID = 0;
-    public static String petName = "";
-    public static String categoryName = "";
     public CreatePet createPetPayLoad()
     {
         CreatePet p= new CreatePet();
@@ -39,33 +37,7 @@ public class TestDataBuild {
         return p;
     }
 
-    public CreatePet createUpdatePetPayLoad(String petID)
-    {
-        CreatePet p= new CreatePet();
-        int petIDIntValue = Integer.parseInt(petID);
-        p.setId(petIDIntValue);
-        //randomStringGeneration
-        p.setName(petName=randomStringGeneration());
-        p.setStatus("Available");
 
-        Category ct = new Category();
-        ct.setId(456);
-        ct.setName(categoryName=randomStringGeneration());
-        p.setCategory(ct);
-
-        ArrayList<String> al = new ArrayList<String>();
-
-        al.add("hhttp:1");
-        p.setPhotoUrls(al);
-
-
-        Tags tg = new Tags();
-        tg.setId(789);
-        tg.setName("Tagname");
-        p.setTags(Collections.singletonList(tg));
-
-        return p;
-    }
 
     public CreatePet createPetPayLoadList(List<String> datatablevalues) {
 
@@ -182,19 +154,5 @@ public class TestDataBuild {
         return value;
     }
 
-    public String checkInDateGeneration()
-    {
-        String checkInDate= LocalDate.now().toString();
-        return checkInDate;
-    }
-
-    public String checkOutDateGeneration()
-    {
-
-        LocalDate today = LocalDate.now();
-        LocalDate tomorrow = today.plusDays(1);
-        String checkOutDate= tomorrow.toString();
-        return checkOutDate;
-    }
 
 }

@@ -1,5 +1,5 @@
 cucumber/Options/TestRunner.class
 stepDefinitions/StepDefinition.class
-resources/TestDataBuild.class
 resources/Utils.class
+resources/TestDataBuild.class
 stepDefinitions/Hooks.class

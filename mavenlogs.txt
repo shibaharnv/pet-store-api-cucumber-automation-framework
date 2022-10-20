@@ -1,10 +1,10 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for bdd.apiFramework:restful-booker-api-automation-framework:jar:1.0-SNAPSHOT
-[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.fasterxml.jackson.core:jackson-databind:jar -> version 2.13.3 vs 2.13.4 @ line 182, column 17
-[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.json:json:jar -> duplicate declaration of version 20220320 @ line 189, column 17
-[WARNING] 'dependencies.dependency.version' for junit:junit:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 197, column 16
-[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version 4.13.2 vs RELEASE @ line 194, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.fasterxml.jackson.core:jackson-databind:jar -> version 2.13.3 vs 2.13.4 @ line 181, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.json:json:jar -> duplicate declaration of version 20220320 @ line 188, column 17
+[WARNING] 'dependencies.dependency.version' for junit:junit:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 196, column 16
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version 4.13.2 vs RELEASE @ line 193, column 17
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -37,9 +37,10 @@
 [INFO] -------------------------------------------------------
 [INFO] Running cucumber.Options.TestRunner
 This is set up method.
+datalist [["6", "Micky", "Sold", "https://image1;https://image2", "91", "Good", "1", "mouse"]]
 ["6", "Micky", "Sold", "https://image1;https://image2", "91", "Good", "1", "mouse"]
 HTTP/1.1 200 OK
-Date: Fri, 07 Oct 2022 16:52:53 GMT
+Date: Thu, 20 Oct 2022 10:58:55 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -68,9 +69,10 @@ Server: Jetty(9.2.9.v20150224)
     "status": "Sold"
 }
 petID 6
+datalist [["7", "Test", "Available", "https://image3;https://image4", "56", "Good", "6", "cat"]]
 ["7", "Test", "Available", "https://image3;https://image4", "56", "Good", "6", "cat"]
 HTTP/1.1 200 OK
-Date: Fri, 07 Oct 2022 16:52:55 GMT
+Date: Thu, 20 Oct 2022 10:58:58 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -101,7 +103,7 @@ Server: Jetty(9.2.9.v20150224)
 petID 7
 ["updatedName", "sold", "https://image1;https://image2", "43", "Good", "13", "dog"]
 HTTP/1.1 200 OK
-Date: Fri, 07 Oct 2022 16:52:57 GMT
+Date: Thu, 20 Oct 2022 10:59:00 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -136,7 +138,7 @@ actualStatus sold
 43
 Status code Assertion Passed 
 HTTP/1.1 200 OK
-Date: Fri, 07 Oct 2022 16:53:00 GMT
+Date: Thu, 20 Oct 2022 10:59:02 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -166,7 +168,7 @@ Server: Jetty(9.2.9.v20150224)
 }
 Status code Assertion Passed 
 HTTP/1.1 200 OK
-Date: Fri, 07 Oct 2022 16:53:02 GMT
+Date: Thu, 20 Oct 2022 10:59:05 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -183,13 +185,13 @@ Server: Jetty(9.2.9.v20150224)
 Status code Assertion Passed 
 [32m[1m????????????????????????????????????????????????????????????????????????????[0m
 [32m[1m?[0m View your Cucumber Report at:                                            [32m[1m?[0m
-[32m[1m?[0m [1m[36m[4mhttps://reports.cucumber.io/reports/f45634d3-34e1-4a81-aed0-72b29a19e0f8[0m [32m[1m?[0m
+[32m[1m?[0m [1m[36m[4mhttps://reports.cucumber.io/reports/ca48a328-2fe0-4af5-ab44-01aea7e65617[0m [32m[1m?[0m
 [32m[1m?[0m                                                                          [32m[1m?[0m
 [32m[1m?[0m [1mThis report will self-destruct in 24h.[0m                                   [32m[1m?[0m
 [32m[1m?[0m Keep reports forever: [4m[1m[36mhttps://reports.cucumber.io/profile[0m                [32m[1m?[0m
-[32m[1m????????????????????????????????????????????????????????????????????????????[0mReporturl :https://reports.cucumber.io/reports/f45634d3-34e1-4a81-aed0-72b29a19e0f8
+[32m[1m????????????????????????????????????????????????????????????????????????????[0mReporturl :https://reports.cucumber.io/reports/ca48a328-2fe0-4af5-ab44-01aea7e65617
 =====Email Sent=====
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.278 s - in cucumber.Options.TestRunner
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.864 s - in cucumber.Options.TestRunner
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -211,8 +213,7 @@ Status code Assertion Passed
 [INFO] skip non existing resourceDirectory /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ restful-booker-api-automation-framework ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 5 source files to /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/target/test-classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ restful-booker-api-automation-framework ---
 [INFO] Skipping execution of surefire because it has already been run for this configuration
@@ -221,14 +222,15 @@ Status code Assertion Passed
 [INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ restful-booker-api-automation-framework ---
+[INFO] Building jar: /Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/target/restful-booker-api-automation-framework-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- maven-cucumber-reporting:5.0.0:generate (execution) @ restful-booker-api-automation-framework ---
 [INFO] About to generate Cucumber report.
-Oct 07, 2022 10:23:01 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+Oct 20, 2022 4:28:57 PM net.masterthought.cucumber.ReportParser parseJsonFiles
 INFO: File '/Users/snagarajan/Desktop/ApiTestAutomation/petstore/pet-store-api-automation-framework/target/jsonReports/cucumber-report.json' contains 1 features
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  29.619 s
-[INFO] Finished at: 2022-10-07T22:23:02+05:30
+[INFO] Total time:  24.297 s
+[INFO] Finished at: 2022-10-20T16:28:57+05:30
 [INFO] ------------------------------------------------------------------------

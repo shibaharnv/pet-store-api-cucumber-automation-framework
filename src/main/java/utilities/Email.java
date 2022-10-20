@@ -12,7 +12,7 @@ import java.util.Properties;
 
 public class Email {
 
-    public static String TestCount;
+
     public static String Reporturl;
 
 

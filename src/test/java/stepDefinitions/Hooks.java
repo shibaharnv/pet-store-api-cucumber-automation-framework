@@ -14,15 +14,14 @@ public class Hooks {
 
     public static String checkOutDate="";
 
-    @Before("@UpdatePetwithPayload or @Common or @GetBookingIds or @PartialUpdateNegative or @GetBookingDetailWithID")
+
+    @Before("@UpdatePetwithPayload or @PetGetAndDelete")
     public void beforeScenario() throws IOException
 
     {
-        //execute this code only when booking id is null
-
+        // this code will be executed only when pet id is null
 
         StepDefinition m =new StepDefinition();
-        TestDataBuild data =new TestDataBuild();
 
         if(StepDefinition.petID==null)
         {
